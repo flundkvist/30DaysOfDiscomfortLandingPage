@@ -369,14 +369,12 @@ hr {
   left: 0; }
 
 #header {
-  background-image: linear-gradient(to right top, #2683d5, #3c90e0, #4f9dea, #60abf5, #70b8ff);
-  height: 900px;
+  background-image: linear-gradient(to right top, #004f9a, #2768b3, #4082cc, #589ce6, #70b8ff);
+  height: 700px;
   width: 100%; }
   #header article {
     width: 80%;
     margin: 0 auto; }
-    #header article a {
-      display: inline-block; }
     #header article .headerText {
       display: flex;
       width: 100%; }
@@ -405,11 +403,14 @@ hr {
       #header article .signUp h4 {
         color: white;
         height: 100%;
-        width: 100%; }
+        width: 100%;
+        margin-top: 10%; }
       #header article .signUp h4.firstName {
-        margin-right: 0%;
+        margin-right: 12.6%;
         width: 60%;
         height: 100%; }
+      #header article .signUp a {
+        height: 100%;
+        margin-top: 10%; }
     #header article .lines svg.lineFirstName {
-      margin-right: 3%;
-      background: red; }
+      margin-right: 3%; }
