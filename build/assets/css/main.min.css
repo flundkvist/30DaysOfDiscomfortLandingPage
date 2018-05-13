@@ -199,7 +199,7 @@ body {
   -webkit-text-size-adjust: 100%; }
 
 .wrapper {
-  width: 100%;
+  width: 90%;
   max-width: 1100px;
   margin: 0 auto; }
 
@@ -429,6 +429,33 @@ hr {
     margin-bottom: -2%;
     font-weight: bold; }
 
+#backstory h2 {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 4%;
+  font-weight: bold; }
+
 #backstory img {
   position: absolute;
   clip: rect(0px, 544px, 775px, 0px); }
+
+#backstory p {
+  font-size: 26px; }
+
+#backstory p.backStoryText {
+  color: white;
+  background: #004F9A;
+  z-index: 1;
+  position: relative;
+  left: 45%;
+  margin-top: 25%;
+  width: 42%;
+  padding: 5% 5%; }
+
+#backstory p.yesTheoryInfo {
+  color: white;
+  background: #00DDB1;
+  z-index: 2;
+  position: relative;
+  width: 40%;
+  left: 40%; }
