@@ -437,7 +437,7 @@ hr {
 
 #backstory img {
   position: absolute;
-  clip: rect(0px, 544px, 775px, 0px); }
+  left: 5%; }
 
 #backstory p {
   font-size: 26px; }
@@ -456,6 +456,6 @@ hr {
   color: white;
   background: #00DDB1;
   z-index: 2;
-  position: relative;
+  position: absolute;
   width: 40%;
   left: 40%; }
