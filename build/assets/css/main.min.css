@@ -369,7 +369,7 @@ hr {
   left: 0; }
 
 #header {
-  background-image: linear-gradient(to right top, #004f9a, #2768b3, #4082cc, #589ce6, #70b8ff);
+  background-image: linear-gradient(to right top, #002263, #00589a, #008fbb, #00c6c8, #74fac8);
   height: 700px;
   width: 100%; }
   #header article {
@@ -416,7 +416,7 @@ hr {
       margin-right: 3%; }
 
 #socialProof {
-  background: #fdfdfd;
+  background: #fbfbfb;
   height: 300px;
   width: auto;
   text-align: center; }
@@ -453,7 +453,7 @@ hr {
       margin-top: 5%;
       width: 42%;
       padding: 5% 5%; }
-    #backstory .backstoryDiv p.yesTheoryInfo {
+    #backstory .backstoryDiv p.seekDiscomfortInfo {
       color: white;
       background: #ffd547;
       position: absolute;
@@ -461,15 +461,34 @@ hr {
       width: 40%;
       padding: 4% 4%;
       left: 40%;
-      margin-top: 56%; }
+      margin-top: 52%; }
 
 #howItWorks {
-  background: #fdfdfd; }
+  background: #fbfbfb;
+  display: grid;
+  grid-template-columns: repeat;
+  text-align: center; }
   #howItWorks h2 {
-    text-align: center;
-    margin-top: 5%;
+    margin-top: 8%;
     margin-bottom: 4%;
     font-weight: bold; }
-  #howItWorks .instructionCard {
+  #howItWorks h3 {
+    font-weight: bold; }
+  #howItWorks p {
+    font-size: 16px;
+    margin-top: -4%; }
+  #howItWorks img {
+    margin-top: 2%;
+    margin-bottom: -5%; }
+  #howItWorks .cards {
     display: grid;
-    grid-template-rows: auto; }
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 5%;
+    margin-bottom: 8%; }
+  #howItWorks .instructionCard {
+    padding: 5%;
+    background: white; }
+
+#challenge {
+  background: #85caf0;
+  height: 500px; }
