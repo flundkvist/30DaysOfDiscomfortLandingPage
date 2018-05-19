@@ -22,6 +22,7 @@
         height: 100%
         align-self: center
         align-items: bottom
+        line-height: 1.30
 
       h1
         color: white
@@ -50,6 +51,7 @@
       a
         height: 100%
         margin-top: 10%
+
 
     .lines
       svg.lineFirstName
@@ -108,7 +110,7 @@
       width: 40%
       padding: 4% 4%
       left: 40%
-      margin-top: 52%
+      margin-top: 53%
 
 #howItWorks
   background: $lightGray
@@ -126,7 +128,7 @@
 
   p
     font-size: 16px
-    margin-top: -4%
+    margin-top: -8%
 
   img
     margin-top: 2%
@@ -139,9 +141,95 @@
     margin-bottom: 8%
 
   .instructionCard
-    padding: 5%
+    width: 345px
+    height: 235px
+    padding: 30px 40px 10px 40px
     background: white
+    box-shadow: 0 12px 20px 0 rgba(0,0,0,0.15)
+
+  .email
+    border-top: 12px solid $neonGreen
+
+  .megaphone
+    border-top: 12px solid $treeGreen
+
+  .chat
+    border-top: 12px solid $tropicalOcean
 
 #challenge
-  background: #85caf0
+  background: url("../img/challengeBackground.jpg.png") no-repeat
+  background-size: cover
+  text-align: center
+  width: auto
   height: 500px
+
+  h2
+    font-weight: bold
+    color: white
+    margin-top: 10%
+
+  p
+    color: white
+    font-size: 24px
+
+#joinNow
+  margin: 3%
+
+  h2
+    margin-bottom: -2%
+    width: 70%
+    color: $thunderGrey
+
+  .signUp
+    display: flex
+
+    h4
+      color: white
+      height: 100%
+      width: 100%
+      margin-top: 10%
+      color: $thunderGrey
+
+    h4.firstName
+      width: 60%
+      height: 100%
+      margin-right: 5.5%
+
+    a
+      height: 100%
+      margin-top: 10%
+      margin-right: 10%
+
+  p
+    color: $thunderGrey
+    font-size: 35px
+    margin-top: -8%
+    width: 70%
+    font-weight: lighter
+
+
+  .lines
+    svg.lineFirstName
+      margin-right: 3%
+
+  #footer
+    background: $mainDarker
+    height: 300px
+
+    .footer-nav
+      display: flex
+      margin-top: 20px
+      float: right
+
+      li
+        list-style: none
+
+      a
+        color: white
+        display: block
+        border-radius: 4px
+        padding: 10px 20px
+        text-decoration: none
+        font-weight: bold
+        font-size: 14px
+        text-transform: uppercase

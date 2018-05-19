@@ -220,7 +220,6 @@ input[type="button"] {
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-  background-color: white;
   border-radius: 1000px;
   cursor: pointer;
   box-sizing: border-box;
@@ -245,11 +244,11 @@ input[type="button"] {
 
 .primaryButton {
   background-color: white;
-  color: #3491cb; }
+  color: #2683d5; }
 
 .secondaryButton {
-  background-color: white;
-  color: #2683d5; }
+  background-color: #2683d5;
+  color: white; }
 
 a {
   color: #0074D9;
@@ -345,11 +344,16 @@ hr {
     color: white;
     display: block;
     border-radius: 4px;
-    padding: 15px 20px;
+    padding: 10px 20px;
     text-decoration: none;
     font-weight: bold;
     font-size: 14px;
     text-transform: uppercase; }
+  .main-nav a.signUpButton {
+    background: white;
+    color: #2683D5;
+    box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2);
+    border-radius: 1000px; }
 
 .flex-video {
   height: 0;
@@ -388,7 +392,8 @@ hr {
         margin-top: 5%;
         height: 100%;
         align-self: center;
-        align-items: bottom; }
+        align-items: bottom;
+        line-height: 1.30; }
       #header article .headerText h1 {
         color: white;
         font-size: 80px;
@@ -461,7 +466,7 @@ hr {
       width: 40%;
       padding: 4% 4%;
       left: 40%;
-      margin-top: 52%; }
+      margin-top: 53%; }
 
 #howItWorks {
   background: #fbfbfb;
@@ -476,7 +481,7 @@ hr {
     font-weight: bold; }
   #howItWorks p {
     font-size: 16px;
-    margin-top: -4%; }
+    margin-top: -8%; }
   #howItWorks img {
     margin-top: 2%;
     margin-bottom: -5%; }
@@ -486,9 +491,77 @@ hr {
     grid-gap: 5%;
     margin-bottom: 8%; }
   #howItWorks .instructionCard {
-    padding: 5%;
-    background: white; }
+    width: 345px;
+    height: 235px;
+    padding: 30px 40px 10px 40px;
+    background: white;
+    box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.15); }
+  #howItWorks .email {
+    border-top: 12px solid #00ddb1; }
+  #howItWorks .megaphone {
+    border-top: 12px solid #2cde00; }
+  #howItWorks .chat {
+    border-top: 12px solid #00c5d6; }
 
 #challenge {
-  background: #85caf0;
+  background: url("../img/challengeBackground.jpg.png") no-repeat;
+  background-size: cover;
+  text-align: center;
+  width: auto;
   height: 500px; }
+  #challenge h2 {
+    font-weight: bold;
+    color: white;
+    margin-top: 10%; }
+  #challenge p {
+    color: white;
+    font-size: 24px; }
+
+#joinNow {
+  margin: 3%; }
+  #joinNow h2 {
+    margin-bottom: -2%;
+    width: 70%;
+    color: #505c62; }
+  #joinNow .signUp {
+    display: flex; }
+    #joinNow .signUp h4 {
+      color: white;
+      height: 100%;
+      width: 100%;
+      margin-top: 10%;
+      color: #505c62; }
+    #joinNow .signUp h4.firstName {
+      width: 60%;
+      height: 100%;
+      margin-right: 5.5%; }
+    #joinNow .signUp a {
+      height: 100%;
+      margin-top: 10%;
+      margin-right: 10%; }
+  #joinNow p {
+    color: #505c62;
+    font-size: 35px;
+    margin-top: -8%;
+    width: 70%;
+    font-weight: lighter; }
+  #joinNow .lines svg.lineFirstName {
+    margin-right: 3%; }
+  #joinNow #footer {
+    background: #004f9a;
+    height: 300px; }
+    #joinNow #footer .footer-nav {
+      display: flex;
+      margin-top: 20px;
+      float: right; }
+      #joinNow #footer .footer-nav li {
+        list-style: none; }
+      #joinNow #footer .footer-nav a {
+        color: white;
+        display: block;
+        border-radius: 4px;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase; }
