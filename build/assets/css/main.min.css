@@ -213,7 +213,7 @@ input[type="reset"],
 input[type="button"] {
   display: inline-block;
   padding: 16px 48px;
-  color: black;
+  color: #2683D5;
   text-align: center;
   font-size: 20px;
   font-weight: bold;
@@ -244,18 +244,30 @@ input[type="button"] {
 
 .primaryButton {
   background-color: white;
-  color: #2683d5; }
+  color: #2683D5; }
 
 .secondaryButton {
-  background-color: #2683d5;
+  background-color: #2683D5;
   color: white; }
 
 a {
-  color: #0074D9;
+  color: white;
   text-decoration: none;
   outline: 0; }
-  a:hover, a:focus {
-    color: #F012BE; }
+
+a.textLink {
+  transition: all 0.2s ease; }
+  a.textLink:hover, a.textLink:focus {
+    text-decoration: underline; }
+
+a.secondaryButton:hover, a.secondaryButton:focus {
+  background-color: #00B0FF; }
+
+a.primaryButton:hover, a.primaryButton:focus {
+  color: #00B0FF; }
+
+a.signUpButton:hover, a.signUpButton:focus {
+  color: #00B0FF; }
 
 ::selection {
   background: #FFF498; }
@@ -353,7 +365,11 @@ hr {
     background: white;
     color: #2683D5;
     box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2);
-    border-radius: 1000px; }
+    border-radius: 1000px;
+    transition: all 0.2s ease;
+    margin-left: 10px; }
+  .main-nav a:hover {
+    color: #00B0FF; }
 
 .flex-video {
   height: 0;
@@ -372,10 +388,14 @@ hr {
   width: 100%;
   left: 0; }
 
+*:focus {
+  outline: none; }
+
 #header {
-  background-image: linear-gradient(to right top, #002263, #00589a, #008fbb, #00c6c8, #74fac8);
+  background-image: linear-gradient(to right top, #002263, #0b387f, #15509b, #1e69b8, #2683d5);
   height: 700px;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
   #header article {
     width: 80%;
     margin: 0 auto; }
@@ -403,22 +423,67 @@ hr {
         display: inline-block;
         height: 100%;
         margin-right: auto; }
-    #header article .signUp {
+    #header article .signUpText {
       display: flex; }
-      #header article .signUp h4 {
+      #header article .signUpText h4 {
         color: white;
         height: 100%;
         width: 100%;
-        margin-top: 10%; }
-      #header article .signUp h4.firstName {
-        margin-right: 12.6%;
+        margin-top: 10%;
+        font-weight: normal; }
+      #header article .signUpText h4.firstName {
+        margin-right: -15.3%;
         width: 60%;
         height: 100%; }
-      #header article .signUp a {
+    #header article form {
+      display: flex; }
+      #header article form input {
         height: 100%;
-        margin-top: 10%; }
-    #header article .lines svg.lineFirstName {
-      margin-right: 3%; }
+        width: 28%;
+        background-color: transparent;
+        border: none;
+        border-bottom: 3px solid rgba(255, 255, 255, 0.6);
+        color: white;
+        font-weight: normal;
+        font-size: 18px;
+        margin-top: -1%;
+        font-family: 'Open Sans', sans-serif; }
+      #header article form input[type=email] {
+        margin-right: auto;
+        width: 35%; }
+      #header article form input[type=text] {
+        width: 20%;
+        margin-right: 8%; }
+      #header article form input[type=text], #header article form [type=email] {
+        transition: all 0.2s ease; }
+        #header article form input[type=text]:focus, #header article form [type=email]:focus {
+          border-bottom: 3px solid white; }
+      #header article form input[type="submit"] {
+        padding: 19.2px 57.6px;
+        font-size: 24px;
+        background: white;
+        color: #2683D5;
+        font-weight: bold;
+        margin-top: -6%;
+        transition: all 0.2s ease; }
+        #header article form input[type="submit"]:hover, #header article form input[type="submit"]:active {
+          color: #00B0FF; }
+
+svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #2683D5;
+  z-index: 0; }
+
+.container {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  vertical-align: middle;
+  overflow: hidden; }
 
 #socialProof {
   background: #fbfbfb;
@@ -427,12 +492,16 @@ hr {
   text-align: center; }
   #socialProof article {
     display: flex;
-    justify-content: space-between;
+    /* erase the code below when invite friend stats have been implemented */
+    justify-content: center;
+    /*justify-content: center*/
     margin-top: 2%;
     align-content: center; }
   #socialProof h1 {
     margin-bottom: -2%;
     font-weight: bold; }
+  #socialProof .amountSignUp, #socialProof .amountSentChallenges {
+    margin: 0 50px; }
 
 #backstory {
   height: 900px; }
@@ -448,31 +517,47 @@ hr {
     width: 100%; }
     #backstory .backstoryDiv img {
       position: absolute;
-      left: 4%; }
+      left: 4%;
+      z-index: 2; }
     #backstory .backstoryDiv p.backStoryText {
       color: white;
-      background: #279AF1;
-      z-index: 1;
+      background: #2683D5;
+      z-index: 3;
       position: absolute;
       left: 50%;
-      margin-top: 5%;
+      margin-top: 4%;
       width: 42%;
-      padding: 5% 5%; }
+      padding: 5% 5%;
+      box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.1); }
     #backstory .backstoryDiv p.seekDiscomfortInfo {
       color: white;
-      background: #ffd547;
+      background: #004f9a;
       position: absolute;
-      z-index: 2;
+      z-index: 4;
       width: 40%;
       padding: 4% 4%;
       left: 40%;
-      margin-top: 53%; }
+      margin-top: 49%;
+      box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.1); }
 
 #howItWorks {
   background: #fbfbfb;
   display: grid;
   grid-template-columns: repeat;
-  text-align: center; }
+  text-align: center;
+  position: relative;
+  z-index: 1; }
+  #howItWorks:before {
+    position: absolute;
+    background: inherit;
+    content: " ";
+    height: 200px;
+    left: 0;
+    right: 0;
+    transform: skewY(-5deg);
+    transform-origin: 100%;
+    margin-top: -10%;
+    z-index: -1; }
   #howItWorks h2 {
     margin-top: 8%;
     margin-bottom: 4%;
@@ -490,18 +575,18 @@ hr {
     grid-template-columns: repeat(3, auto);
     grid-gap: 5%;
     margin-bottom: 8%; }
-  #howItWorks .instructionCard {
-    width: 345px;
-    height: 235px;
-    padding: 30px 40px 10px 40px;
-    background: white;
-    box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.15); }
-  #howItWorks .email {
-    border-top: 12px solid #00ddb1; }
-  #howItWorks .megaphone {
-    border-top: 12px solid #2cde00; }
-  #howItWorks .chat {
-    border-top: 12px solid #00c5d6; }
+    #howItWorks .cards .instructionCard {
+      width: 345px;
+      height: 235px;
+      padding: 30px 40px 10px 40px;
+      background: white;
+      box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.15); }
+    #howItWorks .cards .email {
+      border-top: 12px solid #00ddb1; }
+    #howItWorks .cards .megaphone {
+      border-top: 12px solid #2cde00; }
+    #howItWorks .cards .chat {
+      border-top: 12px solid #00c5d6; }
 
 #challenge {
   background: url("../img/challengeBackground.jpg.png") no-repeat;
@@ -509,13 +594,15 @@ hr {
   text-align: center;
   width: auto;
   height: 500px; }
-  #challenge h2 {
-    font-weight: bold;
-    color: white;
-    margin-top: 10%; }
-  #challenge p {
-    color: white;
-    font-size: 24px; }
+  #challenge .challengeContent {
+    padding: auto 0;
+    margin: 10%; }
+    #challenge .challengeContent h2 {
+      font-weight: bold;
+      color: white; }
+    #challenge .challengeContent p {
+      color: white;
+      font-size: 24px; }
 
 #joinNow {
   margin: 3%; }
@@ -523,45 +610,80 @@ hr {
     margin-bottom: -2%;
     width: 70%;
     color: #505c62; }
-  #joinNow .signUp {
+  #joinNow .signUpText {
     display: flex; }
-    #joinNow .signUp h4 {
-      color: white;
+    #joinNow .signUpText h4 {
+      color: #505c62;
       height: 100%;
       width: 100%;
       margin-top: 10%;
-      color: #505c62; }
-    #joinNow .signUp h4.firstName {
+      font-weight: normal; }
+    #joinNow .signUpText h4.firstName {
+      margin-right: -15.3%;
       width: 60%;
+      height: 100%; }
+  #joinNow form {
+    display: flex; }
+    #joinNow form input {
       height: 100%;
-      margin-right: 5.5%; }
-    #joinNow .signUp a {
-      height: 100%;
-      margin-top: 10%;
-      margin-right: 10%; }
+      width: 28%;
+      background-color: transparent;
+      border: none;
+      border-bottom: 3px solid #505c62;
+      color: #505c62;
+      font-weight: normal;
+      font-size: 18px;
+      margin-top: -1%;
+      font-family: 'Open Sans', sans-serif; }
+    #joinNow form input[type=email] {
+      margin-right: auto;
+      width: 35%; }
+    #joinNow form input[type=text] {
+      width: 20%;
+      margin-right: 8%; }
+    #joinNow form input[type=text], #joinNow form [type=email] {
+      transition: all 0.2s ease; }
+      #joinNow form input[type=text]:focus, #joinNow form [type=email]:focus {
+        border-bottom: 3px solid black;
+        color: black; }
+    #joinNow form input[type="submit"] {
+      padding: 19.2px 57.6px;
+      font-size: 24px;
+      background: #2683D5;
+      color: white;
+      font-weight: bold;
+      margin-top: -6%;
+      transition: all 0.2s ease;
+      border-bottom: #004f9a; }
+      #joinNow form input[type="submit"]:hover, #joinNow form input[type="submit"]:active {
+        background: #00B0FF; }
   #joinNow p {
     color: #505c62;
     font-size: 35px;
-    margin-top: -8%;
-    width: 70%;
+    margin-top: 4%;
+    width: 65%;
     font-weight: lighter; }
   #joinNow .lines svg.lineFirstName {
     margin-right: 3%; }
-  #joinNow #footer {
-    background: #004f9a;
-    height: 300px; }
-    #joinNow #footer .footer-nav {
-      display: flex;
-      margin-top: 20px;
-      float: right; }
-      #joinNow #footer .footer-nav li {
-        list-style: none; }
-      #joinNow #footer .footer-nav a {
-        color: white;
-        display: block;
-        border-radius: 4px;
-        padding: 10px 20px;
-        text-decoration: none;
-        font-weight: bold;
-        font-size: 14px;
-        text-transform: uppercase; }
+
+#footer {
+  background: #004f9a;
+  height: 100px;
+  padding-top: 20px; }
+  #footer .footer-nav {
+    display: flex; }
+    #footer .footer-nav li {
+      list-style: none; }
+    #footer .footer-nav li:first-child {
+      margin-right: auto; }
+    #footer .footer-nav a {
+      color: white;
+      display: block;
+      border-radius: 4px;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: normal;
+      font-size: 14px;
+      transition: all 0.2s ease; }
+    #footer .footer-nav a.footerText:hover, #footer .footer-nav a.footerText:active {
+      color: #00B0FF; }

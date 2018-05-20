@@ -1,8 +1,25 @@
 a
-  color: $blue
+  color: white
   text-decoration: none
   outline: 0
 
+a.textLink
+  transition: all 0.2s ease
   &:hover,
   &:focus
-    color: $fuchsia
+    text-decoration: underline
+
+a.secondaryButton
+  &:hover,
+  &:focus
+    background-color: $hoverColor
+
+a.primaryButton
+  &:hover,
+  &:focus
+    color: $hoverColor
+
+a.signUpButton
+  &:hover,
+  &:focus
+    color: $hoverColor

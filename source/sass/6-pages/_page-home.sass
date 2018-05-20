@@ -1,7 +1,12 @@
+*:focus
+    outline: none
+
+
 #header
-  background-image: linear-gradient(to right top, #002263, #00589a, #008fbb, #00c6c8, #74fac8)
+  background-image: linear-gradient(to right top, #002263, #0b387f, #15509b, #1e69b8, #2683d5)
   height: 700px
   width: 100%
+  position: relative
 
   article
     width: 80%
@@ -34,7 +39,7 @@
         height: 100%
         margin-right: auto
 
-    .signUp
+    .signUpText
       display: flex
 
       h4
@@ -42,20 +47,70 @@
         height: 100%
         width: 100%
         margin-top: 10%
+        font-weight: normal
 
       h4.firstName
-        margin-right: 12.6%
+        margin-right: -15.3%
         width: 60%
         height: 100%
 
-      a
-        height: 100%
-        margin-top: 10%
+    form
+      display: flex
+
+      input
+          height: 100%
+          width: 28%
+          background-color: transparent
+          border: none
+          border-bottom: 3px solid rgba(255,255,255,0.6)
+          color: white
+          font-weight: normal
+          font-size: 18px
+          margin-top: -1%
+          font-family: 'Open Sans', sans-serif
+
+      input[type=email]
+        margin-right: auto
+        width: 35%
+
+      input[type=text]
+        width: 20%
+        margin-right: 8%
+
+      input[type=text],[type=email]
+        transition: all 0.2s ease
+        &:focus
+          border-bottom: 3px solid white
 
 
-    .lines
-      svg.lineFirstName
-        margin-right: 3%
+      input[type="submit"]
+        padding: 19.2px 57.6px
+        font-size: 24px
+        background: white
+        color: $mainColor
+        font-weight: bold
+        margin-top: -6%
+        transition: all 0.2s ease
+
+        &:hover,
+        &:active
+          color: $hoverColor
+svg
+  display: inline-block
+  position: absolute
+  top: 0
+  left: 0
+  color: $mainColor
+  z-index: 0
+
+.container
+  display: inline-block
+  position: relative
+  width: 100%
+  padding-bottom: 100%
+  vertical-align: middle
+  overflow: hidden
+
 
 #socialProof
   background: $lightGray
@@ -65,13 +120,18 @@
 
   article
     display: flex
-    justify-content: space-between
+    /* erase the code below when invite friend stats have been implemented */
+    justify-content: center
+    /*justify-content: center*/
     margin-top: 2%
     align-content: center
 
   h1
     margin-bottom: -2%
     font-weight: bold
+
+  .amountSignUp, .amountSentChallenges
+    margin: 0 50px
 
 #backstory
   height: 900px
@@ -91,32 +151,48 @@
     img
       position: absolute
       left: 4%
+      z-index: 2
 
     p.backStoryText
       color: white
-      background: #279AF1
-      z-index: 1
+      background: $mainColor
+      z-index: 3
       position: absolute
       left: 50%
-      margin-top: 5%
+      margin-top: 4%
       width: 42%
       padding: 5% 5%
+      box-shadow: 0 5px 5px 3px rgba(0,0,0,0.1)
 
     p.seekDiscomfortInfo
       color: white
-      background: #ffd547
+      background: $mainDarker
       position: absolute
-      z-index: 2
+      z-index: 4
       width: 40%
       padding: 4% 4%
       left: 40%
-      margin-top: 53%
+      margin-top: 49%
+      box-shadow: 0 5px 5px 3px rgba(0,0,0,0.1)
 
 #howItWorks
   background: $lightGray
   display: grid
   grid-template-columns: repeat
   text-align: center
+  position: relative
+  z-index: 1
+  &:before
+    position: absolute
+    background: inherit
+    content: " "
+    height: 200px
+    left: 0
+    right: 0
+    transform: skewY(-5deg)
+    transform-origin: 100%
+    margin-top: -10%
+    z-index: -1
 
   h2
     margin-top: 8%
@@ -140,21 +216,21 @@
     grid-gap: 5%
     margin-bottom: 8%
 
-  .instructionCard
-    width: 345px
-    height: 235px
-    padding: 30px 40px 10px 40px
-    background: white
-    box-shadow: 0 12px 20px 0 rgba(0,0,0,0.15)
+    .instructionCard
+      width: 345px
+      height: 235px
+      padding: 30px 40px 10px 40px
+      background: white
+      box-shadow: 0 12px 20px 0 rgba(0,0,0,0.15)
 
-  .email
-    border-top: 12px solid $neonGreen
+    .email
+      border-top: 12px solid $neonGreen
 
-  .megaphone
-    border-top: 12px solid $treeGreen
+    .megaphone
+      border-top: 12px solid $treeGreen
 
-  .chat
-    border-top: 12px solid $tropicalOcean
+    .chat
+      border-top: 12px solid $tropicalOcean
 
 #challenge
   background: url("../img/challengeBackground.jpg.png") no-repeat
@@ -163,14 +239,17 @@
   width: auto
   height: 500px
 
-  h2
-    font-weight: bold
-    color: white
-    margin-top: 10%
+  .challengeContent
+    padding: auto 0
+    margin: 10%
 
-  p
-    color: white
-    font-size: 24px
+    h2
+      font-weight: bold
+      color: white
+
+    p
+      color: white
+      font-size: 24px
 
 #joinNow
   margin: 3%
@@ -180,31 +259,71 @@
     width: 70%
     color: $thunderGrey
 
-  .signUp
+  .signUpText
     display: flex
 
     h4
-      color: white
+      color: $thunderGrey
       height: 100%
       width: 100%
       margin-top: 10%
-      color: $thunderGrey
+      font-weight: normal
 
     h4.firstName
+      margin-right: -15.3%
       width: 60%
       height: 100%
-      margin-right: 5.5%
 
-    a
-      height: 100%
-      margin-top: 10%
-      margin-right: 10%
+  form
+    display: flex
+
+    input
+        height: 100%
+        width: 28%
+        background-color: transparent
+        border: none
+        border-bottom: 3px solid $thunderGrey
+        color: $thunderGrey
+        font-weight: normal
+        font-size: 18px
+        margin-top: -1%
+        font-family: 'Open Sans', sans-serif
+
+    input[type=email]
+      margin-right: auto
+      width: 35%
+
+    input[type=text]
+      width: 20%
+      margin-right: 8%
+
+    input[type=text],[type=email]
+      transition: all 0.2s ease
+      &:focus
+        border-bottom: 3px solid black
+        color: black
+
+
+    input[type="submit"]
+      padding: 19.2px 57.6px
+      font-size: 24px
+      background: $mainColor
+      color: white
+      font-weight: bold
+      margin-top: -6%
+      transition: all 0.2s ease
+      border-bottom: $mainDarker
+
+
+      &:hover,
+      &:active
+        background: $hoverColor
 
   p
     color: $thunderGrey
     font-size: 35px
-    margin-top: -8%
-    width: 70%
+    margin-top: 4%
+    width: 65%
     font-weight: lighter
 
 
@@ -212,24 +331,29 @@
     svg.lineFirstName
       margin-right: 3%
 
-  #footer
-    background: $mainDarker
-    height: 300px
+#footer
+  background: $mainDarker
+  height: 100px
+  padding-top: 20px
 
-    .footer-nav
-      display: flex
-      margin-top: 20px
-      float: right
+  .footer-nav
+    display: flex
 
-      li
-        list-style: none
+    li
+      list-style: none
+    li:first-child
+      margin-right: auto
+      color
 
-      a
-        color: white
-        display: block
-        border-radius: 4px
-        padding: 10px 20px
-        text-decoration: none
-        font-weight: bold
-        font-size: 14px
-        text-transform: uppercase
+    a
+      color: white
+      display: block
+      border-radius: 4px
+      padding: 10px 20px
+      text-decoration: none
+      font-weight: normal
+      font-size: 14px
+      transition: all 0.2s ease
+
+    a.footerText:hover, a.footerText:active
+      color: $hoverColor
