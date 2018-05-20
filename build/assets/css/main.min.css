@@ -398,7 +398,7 @@ hr {
   position: relative; }
   #header article {
     width: 80%;
-    margin: 0 auto; }
+    margin: 5% auto; }
     #header article .headerText {
       display: flex;
       width: 100%; }
@@ -436,7 +436,8 @@ hr {
         width: 60%;
         height: 100%; }
     #header article form {
-      display: flex; }
+      display: flex;
+      margin-top: 12%; }
       #header article form input {
         height: 100%;
         width: 28%;
@@ -445,9 +446,13 @@ hr {
         border-bottom: 3px solid rgba(255, 255, 255, 0.6);
         color: white;
         font-weight: normal;
-        font-size: 18px;
+        font-size: 24px;
         margin-top: -1%;
         font-family: 'Open Sans', sans-serif; }
+      #header article form ::placeholder {
+        color: white;
+        opacity: 0.8;
+        font-weight: normal; }
       #header article form input[type=email] {
         margin-right: auto;
         width: 35%; }
@@ -464,7 +469,7 @@ hr {
         background: white;
         color: #2683D5;
         font-weight: bold;
-        margin-top: -6%;
+        margin-top: -5.5%;
         transition: all 0.2s ease; }
         #header article form input[type="submit"]:hover, #header article form input[type="submit"]:active {
           color: #00B0FF; }
@@ -644,7 +649,7 @@ svg {
     #joinNow form input[type=text], #joinNow form [type=email] {
       transition: all 0.2s ease; }
       #joinNow form input[type=text]:focus, #joinNow form [type=email]:focus {
-        border-bottom: 3px solid black;
+        border-bottom: 3px solid #2683D5;
         color: black; }
     #joinNow form input[type="submit"] {
       padding: 19.2px 57.6px;
