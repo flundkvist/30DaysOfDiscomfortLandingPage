@@ -10,7 +10,7 @@
 
   article
     width: 80%
-    margin: 5% auto
+    margin: 6.5% auto
 
     .headerText
       display: flex
@@ -63,40 +63,39 @@
         width: 28%
         background-color: transparent
         border: none
-        border-bottom: 3px solid rgba(255,255,255,0.6)
+        border-bottom: 5px solid rgba(255,255,255,0.6)
         color: white
-        font-weight: normal
+        font-weight: bold
         font-size: 24px
-        margin-top: -1%
+        margin-top: -5%
         font-family: 'Open Sans', sans-serif
 
       ::placeholder
           color: white
           opacity: 0.8
-          font-weight: normal
+          font-weight: bold
 
 
       input[type=email]
         margin-right: auto
-        width: 35%
 
       input[type=text]
-        width: 20%
         margin-right: 8%
 
       input[type=text],[type=email]
+        padding: 1% 0
         transition: all 0.2s ease
         &:focus
-          border-bottom: 3px solid white
+          border-bottom: 5px solid white
 
 
       input[type="submit"]
-        padding: 19.2px 57.6px
+        padding: 22px 57.6px
         font-size: 24px
         background: white
         color: $mainColor
         font-weight: bold
-        margin-top: -5.5%
+        margin-top: -9%
         transition: all 0.2s ease
 
         &:hover,
@@ -201,43 +200,47 @@ svg
     margin-top: -10%
     z-index: -1
 
-  h2
-    margin-top: 8%
-    margin-bottom: 4%
-    font-weight: bold
+  article
+    background: red
 
-  h3
-    font-weight: bold
+    h2
+      margin-top: 8%
+      margin-bottom: 4%
+      font-weight: bold
+      text-align: center
 
-  p
-    font-size: 16px
-    margin-top: -8%
+    h3
+      font-weight: bold
 
-  img
-    margin-top: 2%
-    margin-bottom: -5%
+    p
+      font-size: 16px
+      margin-top: -8%
 
-  .cards
-    display: grid
-    grid-template-columns: repeat(3, auto)
-    grid-gap: 5%
-    margin-bottom: 8%
+    img
+      margin-top: 2%
+      margin-bottom: -5%
 
-    .instructionCard
-      width: 345px
-      height: 235px
-      padding: 30px 40px 10px 40px
-      background: white
-      box-shadow: 0 12px 20px 0 rgba(0,0,0,0.15)
+    .cards
+      display: grid
+      grid-template-columns: repeat(3, auto)
+      grid-gap: 0px
+      margin-bottom: 8%
 
-    .email
-      border-top: 12px solid $neonGreen
+      .instructionCard
+        width: 345px
+        height: 235px
+        padding: 30px 40px 10px 40px
+        background: white
+        box-shadow: 0 12px 20px 0 rgba(0,0,0,0.15)
 
-    .megaphone
-      border-top: 12px solid $treeGreen
+      .email
+        border-top: 12px solid $neonGreen
 
-    .chat
-      border-top: 12px solid $tropicalOcean
+      .megaphone
+        border-top: 12px solid $treeGreen
+
+      .chat
+        border-top: 12px solid $tropicalOcean
 
 #challenge
   background: url("../img/challengeBackground.jpg.png") no-repeat
@@ -292,19 +295,23 @@ svg
         border-bottom: 3px solid $thunderGrey
         color: $thunderGrey
         font-weight: normal
-        font-size: 18px
-        margin-top: -1%
+        font-size: 24px
+        margin: 9% 0
         font-family: 'Open Sans', sans-serif
+
+    ::placeholder
+        color: $thunderGrey
+        opacity: 0.8
+        font-weight: normal
 
     input[type=email]
       margin-right: auto
-      width: 35%
 
     input[type=text]
-      width: 20%
       margin-right: 8%
 
     input[type=text],[type=email]
+      padding: 1% 0
       transition: all 0.2s ease
       &:focus
         border-bottom: 3px solid $mainColor
@@ -312,12 +319,12 @@ svg
 
 
     input[type="submit"]
-      padding: 19.2px 57.6px
+      padding: 22px 57.6px
       font-size: 24px
       background: $mainColor
       color: white
       font-weight: bold
-      margin-top: -6%
+      margin-top: 7%
       transition: all 0.2s ease
       border-bottom: $mainDarker
 
@@ -329,9 +336,10 @@ svg
   p
     color: $thunderGrey
     font-size: 35px
-    margin-top: 4%
+    margin-top: -2%
     width: 65%
     font-weight: lighter
+    margin-bottom: 5%
 
 
   .lines

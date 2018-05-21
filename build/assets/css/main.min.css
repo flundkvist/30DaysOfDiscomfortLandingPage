@@ -398,7 +398,7 @@ hr {
   position: relative; }
   #header article {
     width: 80%;
-    margin: 5% auto; }
+    margin: 6.5% auto; }
     #header article .headerText {
       display: flex;
       width: 100%; }
@@ -443,33 +443,32 @@ hr {
         width: 28%;
         background-color: transparent;
         border: none;
-        border-bottom: 3px solid rgba(255, 255, 255, 0.6);
+        border-bottom: 5px solid rgba(255, 255, 255, 0.6);
         color: white;
-        font-weight: normal;
+        font-weight: bold;
         font-size: 24px;
-        margin-top: -1%;
+        margin-top: -5%;
         font-family: 'Open Sans', sans-serif; }
       #header article form ::placeholder {
         color: white;
         opacity: 0.8;
-        font-weight: normal; }
+        font-weight: bold; }
       #header article form input[type=email] {
-        margin-right: auto;
-        width: 35%; }
+        margin-right: auto; }
       #header article form input[type=text] {
-        width: 20%;
         margin-right: 8%; }
       #header article form input[type=text], #header article form [type=email] {
+        padding: 1% 0;
         transition: all 0.2s ease; }
         #header article form input[type=text]:focus, #header article form [type=email]:focus {
-          border-bottom: 3px solid white; }
+          border-bottom: 5px solid white; }
       #header article form input[type="submit"] {
-        padding: 19.2px 57.6px;
+        padding: 22px 57.6px;
         font-size: 24px;
         background: white;
         color: #2683D5;
         font-weight: bold;
-        margin-top: -5.5%;
+        margin-top: -9%;
         transition: all 0.2s ease; }
         #header article form input[type="submit"]:hover, #header article form input[type="submit"]:active {
           color: #00B0FF; }
@@ -563,35 +562,38 @@ svg {
     transform-origin: 100%;
     margin-top: -10%;
     z-index: -1; }
-  #howItWorks h2 {
-    margin-top: 8%;
-    margin-bottom: 4%;
-    font-weight: bold; }
-  #howItWorks h3 {
-    font-weight: bold; }
-  #howItWorks p {
-    font-size: 16px;
-    margin-top: -8%; }
-  #howItWorks img {
-    margin-top: 2%;
-    margin-bottom: -5%; }
-  #howItWorks .cards {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-gap: 5%;
-    margin-bottom: 8%; }
-    #howItWorks .cards .instructionCard {
-      width: 345px;
-      height: 235px;
-      padding: 30px 40px 10px 40px;
-      background: white;
-      box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.15); }
-    #howItWorks .cards .email {
-      border-top: 12px solid #00ddb1; }
-    #howItWorks .cards .megaphone {
-      border-top: 12px solid #2cde00; }
-    #howItWorks .cards .chat {
-      border-top: 12px solid #00c5d6; }
+  #howItWorks article {
+    background: red; }
+    #howItWorks article h2 {
+      margin-top: 8%;
+      margin-bottom: 4%;
+      font-weight: bold;
+      text-align: center; }
+    #howItWorks article h3 {
+      font-weight: bold; }
+    #howItWorks article p {
+      font-size: 16px;
+      margin-top: -8%; }
+    #howItWorks article img {
+      margin-top: 2%;
+      margin-bottom: -5%; }
+    #howItWorks article .cards {
+      display: grid;
+      grid-template-columns: repeat(3, auto);
+      grid-gap: 0px;
+      margin-bottom: 8%; }
+      #howItWorks article .cards .instructionCard {
+        width: 345px;
+        height: 235px;
+        padding: 30px 40px 10px 40px;
+        background: white;
+        box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.15); }
+      #howItWorks article .cards .email {
+        border-top: 12px solid #00ddb1; }
+      #howItWorks article .cards .megaphone {
+        border-top: 12px solid #2cde00; }
+      #howItWorks article .cards .chat {
+        border-top: 12px solid #00c5d6; }
 
 #challenge {
   background: url("../img/challengeBackground.jpg.png") no-repeat;
@@ -637,27 +639,30 @@ svg {
       border-bottom: 3px solid #505c62;
       color: #505c62;
       font-weight: normal;
-      font-size: 18px;
-      margin-top: -1%;
+      font-size: 24px;
+      margin: 9% 0;
       font-family: 'Open Sans', sans-serif; }
+    #joinNow form ::placeholder {
+      color: #505c62;
+      opacity: 0.8;
+      font-weight: normal; }
     #joinNow form input[type=email] {
-      margin-right: auto;
-      width: 35%; }
+      margin-right: auto; }
     #joinNow form input[type=text] {
-      width: 20%;
       margin-right: 8%; }
     #joinNow form input[type=text], #joinNow form [type=email] {
+      padding: 1% 0;
       transition: all 0.2s ease; }
       #joinNow form input[type=text]:focus, #joinNow form [type=email]:focus {
         border-bottom: 3px solid #2683D5;
         color: black; }
     #joinNow form input[type="submit"] {
-      padding: 19.2px 57.6px;
+      padding: 22px 57.6px;
       font-size: 24px;
       background: #2683D5;
       color: white;
       font-weight: bold;
-      margin-top: -6%;
+      margin-top: 7%;
       transition: all 0.2s ease;
       border-bottom: #004f9a; }
       #joinNow form input[type="submit"]:hover, #joinNow form input[type="submit"]:active {
@@ -665,9 +670,10 @@ svg {
   #joinNow p {
     color: #505c62;
     font-size: 35px;
-    margin-top: 4%;
+    margin-top: -2%;
     width: 65%;
-    font-weight: lighter; }
+    font-weight: lighter;
+    margin-bottom: 5%; }
   #joinNow .lines svg.lineFirstName {
     margin-right: 3%; }
 
