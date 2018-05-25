@@ -261,13 +261,13 @@ a.textLink {
     text-decoration: underline; }
 
 a.secondaryButton:hover, a.secondaryButton:focus {
-  background-color: #00B0FF; }
+  background-color: #0068B7; }
 
 a.primaryButton:hover, a.primaryButton:focus {
-  color: #00B0FF; }
+  color: #0068B7; }
 
 a.signUpButton:hover, a.signUpButton:focus {
-  color: #00B0FF; }
+  color: #0068B7; }
 
 ::selection {
   background: #FFF498; }
@@ -461,7 +461,7 @@ hr {
         margin-top: -9%;
         transition: all 0.2s ease; }
         #header article form input[type="submit"]:hover, #header article form input[type="submit"]:active {
-          color: #00B0FF; }
+          color: #0068B7; }
 
 svg {
   display: inline-block;
@@ -647,6 +647,7 @@ svg {
         color: black; }
     #joinNow form input[type="submit"] {
       padding: 22px 57.6px;
+      height: auto;
       font-size: 24px;
       background: #2683D5;
       color: white;
@@ -655,7 +656,7 @@ svg {
       transition: all 0.2s ease;
       border-bottom: #004f9a; }
       #joinNow form input[type="submit"]:hover, #joinNow form input[type="submit"]:active {
-        background: #00B0FF; }
+        background: #0068B7; }
   #joinNow p {
     color: #505c62;
     font-size: 35px;
