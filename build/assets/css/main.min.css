@@ -369,7 +369,52 @@ hr {
     transition: all 0.2s ease;
     margin-left: 10px; }
   .main-nav a:hover {
-    color: #00B0FF; }
+    color: #004f9a; }
+
+#colorNav {
+  background-color: white;
+  box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2);
+  height: 100%; }
+  #colorNav .main-nav li {
+    list-style: none; }
+  #colorNav .main-nav li:first-child {
+    margin-right: auto; }
+  #colorNav .main-nav a {
+    color: #2683D5; }
+  #colorNav .main-nav a.signUpButton {
+    background: #2683D5;
+    color: white;
+    box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2);
+    border-radius: 1000px;
+    transition: all 0.2s ease;
+    margin-left: 10px; }
+  #colorNav .main-nav a.signUpButton:hover {
+    background-color: #004f9a;
+    color: white; }
+  #colorNav .main-nav a:hover {
+    color: #004f9a; }
+
+#footer {
+  background: #004f9a;
+  height: 100px;
+  padding-top: 20px; }
+  #footer .footer-nav {
+    display: flex; }
+    #footer .footer-nav li {
+      list-style: none; }
+    #footer .footer-nav li:first-child {
+      margin-right: auto; }
+    #footer .footer-nav a {
+      color: white;
+      display: block;
+      border-radius: 4px;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: normal;
+      font-size: 14px;
+      transition: all 0.2s ease; }
+    #footer .footer-nav a.footerText:hover, #footer .footer-nav a.footerText:active {
+      color: #00B0FF; }
 
 .flex-video {
   height: 0;
@@ -667,24 +712,5 @@ svg {
   #joinNow .lines svg.lineFirstName {
     margin-right: 3%; }
 
-#footer {
-  background: #004f9a;
-  height: 100px;
-  padding-top: 20px; }
-  #footer .footer-nav {
-    display: flex; }
-    #footer .footer-nav li {
-      list-style: none; }
-    #footer .footer-nav li:first-child {
-      margin-right: auto; }
-    #footer .footer-nav a {
-      color: white;
-      display: block;
-      border-radius: 4px;
-      padding: 10px 20px;
-      text-decoration: none;
-      font-weight: normal;
-      font-size: 14px;
-      transition: all 0.2s ease; }
-    #footer .footer-nav a.footerText:hover, #footer .footer-nav a.footerText:active {
-      color: #00B0FF; }
+#terms {
+  background-color: white; }
