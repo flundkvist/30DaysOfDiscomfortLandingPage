@@ -361,15 +361,8 @@ hr {
     font-weight: bold;
     font-size: 14px;
     text-transform: uppercase; }
-  .main-nav a.signUpButton {
-    background: white;
-    color: #2683D5;
-    box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2);
-    border-radius: 1000px;
-    transition: all 0.2s ease;
-    margin-left: 10px; }
   .main-nav a:hover {
-    color: #004f9a; }
+    color: rgba(255, 255, 255, 0.8); }
 
 #colorNav {
   background-color: white;
@@ -437,13 +430,24 @@ hr {
   outline: none; }
 
 #header {
-  background-image: linear-gradient(to right top, #002263, #0b387f, #15509b, #1e69b8, #2683d5);
-  height: 700px;
+  background: url("../img/heroBackground.jpg") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  max-height: 900px;
+  overflow: hidden;
   width: 100%;
   position: relative; }
   #header article {
     width: 80%;
     margin: 6.5% auto; }
+    #header article p.freeText {
+      color: white;
+      display: inline-block;
+      font-size: 18px;
+      font-weight: lighter;
+      float: right;
+      margin-right: 9.5%;
+      margin-top: -13.5%; }
     #header article .headerText {
       display: flex;
       width: 100%; }
@@ -452,6 +456,7 @@ hr {
         display: inline-block;
         color: white;
         font-size: 28px;
+        font-weight: lighter;
         text-shadow: 0px 3px 2px rgba(0, 0, 0, 0.25);
         width: 30%;
         margin-top: 5%;
@@ -504,25 +509,10 @@ hr {
         color: #2683D5;
         font-weight: bold;
         margin-top: -9%;
+        margin-bottom: 15%;
         transition: all 0.2s ease; }
         #header article form input[type="submit"]:hover, #header article form input[type="submit"]:active {
           color: #0068B7; }
-
-svg {
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: #2683D5;
-  z-index: 0; }
-
-.container {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  padding-bottom: 100%;
-  vertical-align: middle;
-  overflow: hidden; }
 
 #socialProof {
   background: #fbfbfb;
@@ -560,7 +550,7 @@ svg {
       z-index: 2; }
     #backstory .backstoryDiv p.backStoryText {
       color: white;
-      background: #2683D5;
+      background: #004f9a;
       z-index: 3;
       position: absolute;
       left: 50%;
@@ -570,7 +560,7 @@ svg {
       box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.1); }
     #backstory .backstoryDiv p.seekDiscomfortInfo {
       color: white;
-      background: #004f9a;
+      background: #2683D5;
       position: absolute;
       z-index: 4;
       width: 40%;
@@ -585,20 +575,20 @@ svg {
   grid-template-columns: repeat;
   text-align: center;
   position: relative;
-  z-index: 1; }
-  #howItWorks:before {
-    position: absolute;
-    background: inherit;
-    content: " ";
-    height: 200px;
-    left: 0;
-    right: 0;
-    transform: skewY(-5deg);
-    transform-origin: 100%;
-    margin-top: -10%;
-    z-index: -1; }
+  z-index: 1;
+  /*&:before
+    position: absolute
+    background: inherit
+    content: " "
+    height: 200px
+    left: 0
+    right: 0
+    transform: skewY(-5deg)
+    transform-origin: 100%
+    margin-top: -10%
+    z-index: -1 */ }
   #howItWorks article h2 {
-    margin-top: 8%;
+    margin-top: 10%;
     margin-bottom: 4%;
     font-weight: bold;
     text-align: center; }
@@ -614,7 +604,7 @@ svg {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-gap: 20px;
-    margin-bottom: 8%;
+    margin-bottom: 10%;
     justify-content: center; }
     #howItWorks article .cards .instructionCard {
       width: 345px;
@@ -646,7 +636,7 @@ svg {
       font-size: 24px; }
 
 #joinNow {
-  margin: 3%; }
+  margin: 4%; }
   #joinNow h2 {
     margin-bottom: -2%;
     width: 70%;
@@ -714,3 +704,5 @@ svg {
 
 #terms {
   background-color: white; }
+  #terms h4 {
+    color: #2683D5; }
