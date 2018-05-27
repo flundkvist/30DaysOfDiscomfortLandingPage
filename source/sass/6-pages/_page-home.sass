@@ -16,6 +16,11 @@
     width: 80%
     margin: 6.5% auto
 
+    @media only screen and (max-width: 920px)
+      justify-content: center
+      align-items: center
+      align-content: center
+
     p.freeText
       color: white
       display: inline-block
@@ -25,9 +30,19 @@
       margin-right: 9.5%
       margin-top: -13.5%
 
+      @media only screen and (max-width: 1180px)
+        font-size: 16px
+      @media only screen and (max-width: 920px)
+        font-size: 14px
+        margin-right: 9%
+
     .headerText
       display: flex
       width: 100%
+
+      @media only screen and (max-width: 920px)
+        flex-direction: column
+
 
       p
         text-align: left
@@ -43,6 +58,13 @@
         align-items: bottom
         line-height: 1.30
 
+        @media only screen and (max-width: 1180px)
+          font-size: 24px
+        @media only screen and (max-width: 920px)
+          font-size: 22px
+          align-self: flex-start
+          width: 80%
+          margin-top: 0%
 
       h1
         color: white
@@ -54,12 +76,19 @@
         height: 100%
         margin-right: auto
 
-    .signUpText
-      display: flex
+        @media only screen and (max-width: 1180px)
+          font-size: 64px
+        @media only screen and (max-width: 920px)
+          font-size: 54px
+          margin-bottom: 4%
+          width: 90%
 
     form
       display: flex
       margin-top: 12%
+
+      @media only screen and (max-width: 800px)
+        flex-direction: column
 
       input
         height: 100%
@@ -73,6 +102,10 @@
         margin-top: -5%
         font-family: 'Open Sans', sans-serif
 
+        @media only screen and (max-width: 800px)
+          width: 80%
+          justify-content: center
+
       ::placeholder
           color: white
           opacity: 0.8
@@ -81,6 +114,9 @@
 
       input[type=email]
         margin-right: auto
+
+        @media only screen and (max-width: 800px)
+          margin-top: 10%
 
       input[type=text]
         margin-right: 8%
@@ -92,8 +128,9 @@
           border-bottom: 4px solid white
 
 
+
       input[type="submit"]
-        padding: 22px 57.6px
+        padding: 2.5% 3%
         font-size: 24px
         background: white
         color: $mainColor
@@ -102,9 +139,17 @@
         margin-bottom: 15%
         transition: all 0.2s ease
 
+        @media only screen and (max-width: 800px)
+          margin-top: 10%
+          width: 60%
+          padding: 4% 3%
+
         &:hover,
         &:active
           color: $hoverColor
+
+        @media only screen and (max-width: 1180px)
+          font-size: 22px
 
 
 #socialProof
@@ -201,13 +246,32 @@
     h3
       font-weight: bold
 
+      @media only screen and (max-width: 1090px)
+        font-size: 23.4px
+
     p
       font-size: 16px
       margin-top: -8%
 
+      @media only screen and (max-width: 1090px)
+        font-size: 14.4px
+        margin-top: -7.2%
+
+      @media only screen and (max-width: 990px)
+        font-size: 16px
+        margin-top: -8%
+
     img
       margin-top: 2%
       margin-bottom: -5%
+
+      @media only screen and (max-width: 1090px)
+        margin-top: 0%
+        margin-bottom: -4.5%
+
+      @media only screen and (max-width: 990px)
+        margin-top: 2%
+        margin-bottom: -5%
 
     .cards
       display: grid
@@ -216,6 +280,9 @@
       margin-bottom: 10%
       justify-content: center
 
+      @media only screen and (max-width: 990px)
+        grid-template-columns: repeat(1, auto)
+
       .instructionCard
         width: 345px
         height: 235px
@@ -223,14 +290,42 @@
         background: white
         box-shadow: 0 12px 20px 0 rgba(0,0,0,0.15)
 
+        @media only screen and (max-width: 1090px)
+          width: 310.5px
+          height: 211.5px
+          padding: 27px 36px 9px 36px
+
+        @media only screen and (max-width: 990px)
+          width: 345px
+          height: 235px
+          padding: 30px 40px 10px 40px
+
       .email
         border-top: 12px solid $neonGreen
+
+        @media only screen and (max-width: 1090px)
+          border-top: 10.8px solid $neonGreen
+
+        @media only screen and (max-width: 990px)
+          border-top: 12px solid $neonGreen
 
       .megaphone
         border-top: 12px solid $treeGreen
 
+        @media only screen and (max-width: 1090px)
+          border-top: 10.8px solid $treeGreen
+
+        @media only screen and (max-width: 990px)
+          border-top: 12px solid $treeGreen
+
       .chat
         border-top: 12px solid $tropicalOcean
+
+        @media only screen and (max-width: 1090px)
+          border-top: 10.8px solid $tropicalOcean
+
+        @media only screen and (max-width: 990px)
+          border-top: 12px solid $tropicalOcean
 
 #challenge
   background: url("../img/challengeBackground.jpg.png") no-repeat
@@ -277,6 +372,9 @@
   form
     display: flex
 
+    @media only screen and (max-width: 800px)
+      flex-direction: column
+
     input
         height: 100%
         width: 28%
@@ -289,6 +387,10 @@
         margin: 9% 0
         font-family: 'Open Sans', sans-serif
 
+        @media only screen and (max-width: 800px)
+          width: 80%
+          justify-content: center
+
     ::placeholder
         color: $thunderGrey
         opacity: 0.8
@@ -296,6 +398,9 @@
 
     input[type=email]
       margin-right: auto
+
+      @media only screen and (max-width: 800px)
+        margin-top: 3%
 
     input[type=text]
       margin-right: 8%
@@ -308,8 +413,7 @@
         color: black
 
     input[type="submit"]
-      padding: 22px 57.6px
-      height: auto
+      padding: 2.5% 3%
       font-size: 24px
       background: $mainColor
       color: white
@@ -318,10 +422,17 @@
       transition: all 0.2s ease
       border-bottom: $mainDarker
 
+      @media only screen and (max-width: 800px)
+        margin-top: 3%
+        width: 60%
+        padding: 4% 3%
 
       &:hover,
       &:active
-        background: $hoverColor
+        background-color: $hoverColor
+
+      @media only screen and (max-width: 1180px)
+        font-size: 22px
 
   p
     color: $thunderGrey
