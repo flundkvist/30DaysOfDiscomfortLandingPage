@@ -390,7 +390,8 @@ hr {
 #footer {
   background: #004f9a;
   height: 100px;
-  padding-top: 20px; }
+  padding-top: 20px;
+  overflow: hidden; }
   #footer .footer-nav {
     display: flex; }
     #footer .footer-nav li {
@@ -408,6 +409,10 @@ hr {
       transition: all 0.2s ease; }
     #footer .footer-nav a.footerText:hover, #footer .footer-nav a.footerText:active {
       color: #00B0FF; }
+  @media only screen and (max-width: 1180px) {
+    #footer {
+      flex-direction: row;
+      height: auto; } }
 
 .flex-video {
   height: 0;
@@ -453,7 +458,7 @@ hr {
     /*@media only screen and (max-width: 920px)
         font-size: 14px
         margin-right: 9% */ }
-    @media only screen and (max-width: 920px) {
+    @media only screen and (max-width: 565px) {
       #header article {
         margin-right: auto;
         margin-left: auto; } }
@@ -485,6 +490,9 @@ hr {
             align-self: flex-start;
             width: 80%;
             margin-top: 0%; } }
+        @media only screen and (max-width: 565px) {
+          #header article .headerText p {
+            width: 300px; } }
       #header article .headerText h1 {
         color: white;
         font-size: 80px;
@@ -501,7 +509,12 @@ hr {
           #header article .headerText h1 {
             font-size: 54px;
             margin-bottom: 4%;
-            width: 90%; } }
+            width: 70%; } }
+        @media only screen and (max-width: 565px) {
+          #header article .headerText h1 {
+            width: 400px;
+            font-size: 50px;
+            margin-bottom: 5%; } }
     #header article form {
       display: flex;
       margin-top: 12%; }
@@ -539,6 +552,9 @@ hr {
         transition: all 0.2s ease; }
         #header article form input[type=text]:focus, #header article form [type=email]:focus {
           border-bottom: 4px solid white; }
+      @media only screen and (max-width: 565px) {
+        #header article form {
+          width: 400px; } }
       #header article form input[type="submit"] {
         padding: 2.5% 3%;
         font-size: 24px;
@@ -548,17 +564,20 @@ hr {
         margin-top: -9%;
         margin-bottom: 15%;
         transition: all 0.2s ease; }
+        #header article form input[type="submit"]:hover, #header article form input[type="submit"]:active {
+          color: #0068B7; }
+        @media only screen and (max-width: 1180px) {
+          #header article form input[type="submit"] {
+            font-size: 22px; } }
         @media only screen and (max-width: 800px) {
           #header article form input[type="submit"] {
             margin-top: 10%;
             width: 60%;
             padding: 4% 3%;
             margin-bottom: 15%; } }
-        #header article form input[type="submit"]:hover, #header article form input[type="submit"]:active {
-          color: #0068B7; }
-        @media only screen and (max-width: 1180px) {
+        @media only screen and (max-width: 565px) {
           #header article form input[type="submit"] {
-            font-size: 22px; } }
+            margin-bottom: 20%; } }
 
 #socialProof {
   background: #fbfbfb;
@@ -579,7 +598,8 @@ hr {
     margin: 0 50px; }
 
 #backstory {
-  height: 900px; }
+  height: 900px;
+  overflow: hidden; }
   #backstory h2 {
     text-align: center;
     margin-top: 5%;
@@ -786,6 +806,9 @@ hr {
       #joinNow form input[type=text]:focus, #joinNow form [type=email]:focus {
         border-bottom: 3px solid #2683D5;
         color: black; }
+    @media only screen and (max-width: 565px) {
+      #joinNow form {
+        width: 400px; } }
     #joinNow form input[type="submit"] {
       padding: 2.5% 3%;
       font-size: 24px;
@@ -795,16 +818,16 @@ hr {
       margin-top: 7%;
       transition: all 0.2s ease;
       border-bottom: #004f9a; }
-      @media only screen and (max-width: 800px) {
-        #joinNow form input[type="submit"] {
-          margin-top: 3%;
-          width: 60%;
-          padding: 4% 3%; } }
       #joinNow form input[type="submit"]:hover, #joinNow form input[type="submit"]:active {
         background-color: #0068B7; }
       @media only screen and (max-width: 1180px) {
         #joinNow form input[type="submit"] {
           font-size: 22px; } }
+      @media only screen and (max-width: 800px) {
+        #joinNow form input[type="submit"] {
+          margin-top: 3%;
+          width: 60%;
+          padding: 4% 3%; } }
   #joinNow p {
     color: #505c62;
     font-size: 35px;
@@ -812,8 +835,19 @@ hr {
     width: 65%;
     font-weight: lighter;
     margin-bottom: 5%; }
-  #joinNow .lines svg.lineFirstName {
-    margin-right: 3%; }
+    @media only screen and (max-width: 1180px) {
+      #joinNow p {
+        font-size: 30px; } }
+    @media only screen and (max-width: 920px) {
+      #joinNow p {
+        font-size: 28px;
+        align-self: flex-start;
+        width: 80%;
+        margin-top: 0%; } }
+    @media only screen and (max-width: 565px) {
+      #joinNow p {
+        width: 320px;
+        font-size: 25px; } }
 
 #terms {
   background-color: white; }

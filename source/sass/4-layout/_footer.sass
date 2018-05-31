@@ -2,6 +2,7 @@
   background: $mainDarker
   height: 100px
   padding-top: 20px
+  overflow: hidden
 
   .footer-nav
     display: flex
@@ -23,3 +24,7 @@
 
     a.footerText:hover, a.footerText:active
       color: $hoverColorLight
+
+  @media only screen and (max-width: 1180px)
+    flex-direction: row
+    height: auto
