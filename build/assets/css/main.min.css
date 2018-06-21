@@ -396,19 +396,27 @@ hr {
   background: #004f9a;
   height: 100px;
   padding-top: 20px;
-  overflow: hidden;
-  /*@media only screen and (max-width: 1180px)
-    height: 300px */ }
+  overflow: hidden; }
+  @media only screen and (max-width: 1180px) {
+    #footer {
+      height: auto; } }
   #footer .footer-nav {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
     #footer .footer-nav li {
-      list-style: none; }
+      list-style: none;
+      margin-right: -5px; }
+      @media only screen and (max-width: 500px) {
+        #footer .footer-nav li {
+          margin-right: -20px; } }
     #footer .footer-nav li:first-child {
       margin-right: auto; }
-      @media only screen and (max-width: 1180px) {
+      @media only screen and (max-width: 1013px) {
         #footer .footer-nav li:first-child {
-          margin-right: none;
-          background: red; } }
+          margin-right: -5px; } }
+      @media only screen and (max-width: 500px) {
+        #footer .footer-nav li:first-child {
+          margin-right: -20px; } }
     #footer .footer-nav a {
       color: white;
       display: block;
@@ -420,11 +428,6 @@ hr {
       transition: all 0.2s ease; }
     #footer .footer-nav a.footerText:hover, #footer .footer-nav a.footerText:active {
       color: #00B0FF; }
-    @media only screen and (max-width: 1180px) {
-      #footer .footer-nav {
-        flex-direction: row;
-        height: auto;
-        align-items: center; } }
 
 .flex-video {
   height: 0;
@@ -632,7 +635,7 @@ hr {
       position: absolute;
       left: 50%;
       margin-top: 4%;
-      width: 42%;
+      width: 480px;
       padding: 5% 5%;
       box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.1); }
     #backstory .backstoryDiv p.seekDiscomfortInfo {
@@ -640,7 +643,7 @@ hr {
       background: #2683D5;
       position: absolute;
       z-index: 4;
-      width: 40%;
+      width: 450px;
       padding: 4% 4%;
       left: 40%;
       margin-top: 49%;

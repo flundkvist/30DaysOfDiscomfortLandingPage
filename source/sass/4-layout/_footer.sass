@@ -4,20 +4,26 @@
   padding-top: 20px
   overflow: hidden
 
-  /*@media only screen and (max-width: 1180px)
-    height: 300px
+  @media only screen and (max-width: 1180px)
+    height: auto
 
   .footer-nav
     display: flex
+    flex-wrap: wrap
 
     li
       list-style: none
+      margin-right: -5px
+
+      @media only screen and (max-width: 500px)
+        margin-right: -20px
+
     li:first-child
       margin-right: auto
-
-      @media only screen and (max-width: 1180px)
-        margin-right: none
-        background: red
+      @media only screen and (max-width: 1013px)
+        margin-right: -5px
+      @media only screen and (max-width: 500px)
+        margin-right: -20px
 
     a
       color: white
@@ -31,8 +37,3 @@
 
     a.footerText:hover, a.footerText:active
       color: $hoverColorLight
-
-    @media only screen and (max-width: 1180px)
-      flex-direction: row
-      height: auto
-      align-items: center
