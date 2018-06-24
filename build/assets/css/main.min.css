@@ -375,6 +375,13 @@ hr {
       height: auto; }
   #colorNav .main-nav li.nav-toggle {
     display: none; }
+    @media only screen and (max-width: 730px) {
+      #colorNav .main-nav li.nav-toggle {
+        display: block; } }
+  @media only screen and (max-width: 730px) {
+    #colorNav .main-nav li.responsive-nav.unfold {
+      display: block;
+      width: 100%; } }
   #colorNav .main-nav li:first-child {
     margin-right: auto; }
   #colorNav .main-nav a {
@@ -614,6 +621,9 @@ hr {
 
 #backstory {
   height: 900px; }
+  @media only screen and (max-width: 1100px) {
+    #backstory {
+      height: auto; } }
   #backstory h2 {
     text-align: center;
     margin-top: 5%;
@@ -621,33 +631,80 @@ hr {
     font-weight: bold; }
   #backstory p {
     font-size: 24px; }
+    @media only screen and (max-width: 570px) {
+      #backstory p {
+        font-size: 20px; } }
   #backstory .backstoryDiv {
     position: relative;
     width: 100%; }
     #backstory .backstoryDiv img {
-      position: absolute;
-      left: 4%;
-      z-index: 2; }
+      position: relative;
+      padding: 0% 4%;
+      z-index: 2;
+      max-width: 100%;
+      min-width: 330px;
+      height: auto; }
+      @media only screen and (max-width: 1100px) {
+        #backstory .backstoryDiv img {
+          position: relative;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: 100%;
+          max-width: 600px; } }
     #backstory .backstoryDiv p.backStoryText {
       color: white;
       background: #004f9a;
       z-index: 3;
       position: absolute;
-      left: 50%;
-      margin-top: 4%;
+      margin-top: -740px;
+      margin-left: 550px;
       width: 480px;
-      padding: 5% 5%;
+      padding: 55px 55px;
       box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.1); }
+      @media only screen and (max-width: 1100px) {
+        #backstory .backstoryDiv p.backStoryText {
+          display: block;
+          position: relative;
+          margin-left: auto;
+          margin-right: auto;
+          width: 480px;
+          margin-top: -180px; } }
+      @media only screen and (max-width: 570px) {
+        #backstory .backstoryDiv p.backStoryText {
+          width: 399px;
+          margin-top: -100px; } }
+      @media only screen and (max-width: 440px) {
+        #backstory .backstoryDiv p.backStoryText {
+          width: 346px;
+          padding: 38px 38px;
+          margin-top: -40px; } }
     #backstory .backstoryDiv p.seekDiscomfortInfo {
       color: white;
       background: #2683D5;
       position: absolute;
       z-index: 4;
       width: 450px;
-      padding: 4% 4%;
-      left: 40%;
-      margin-top: 49%;
+      padding: 40px 40px;
+      margin-left: 500px;
+      margin-top: -240px;
       box-shadow: 0 5px 5px 3px rgba(0, 0, 0, 0.1); }
+      @media only screen and (max-width: 1100px) {
+        #backstory .backstoryDiv p.seekDiscomfortInfo {
+          display: block;
+          position: relative;
+          width: 480px;
+          margin-left: auto;
+          margin-right: auto;
+          margin-top: -50px; } }
+      @media only screen and (max-width: 570px) {
+        #backstory .backstoryDiv p.seekDiscomfortInfo {
+          width: 399px; } }
+      @media only screen and (max-width: 440px) {
+        #backstory .backstoryDiv p.seekDiscomfortInfo {
+          width: 346px;
+          padding: 38px 38px;
+          margin-top: -20px; } }
 
 #howItWorks {
   background: #fbfbfb;
@@ -688,6 +745,10 @@ hr {
       #howItWorks article p {
         font-size: 16px;
         margin-top: -8%; } }
+    @media only screen and (max-width: 680px) {
+      #howItWorks article p {
+        font-size: 14.4px;
+        margin-top: -7.2%; } }
   #howItWorks article img {
     margin-top: 2%;
     margin-bottom: -5%; }
@@ -699,6 +760,10 @@ hr {
       #howItWorks article img {
         margin-top: 2%;
         margin-bottom: -5%; } }
+    @media only screen and (max-width: 680px) {
+      #howItWorks article img {
+        margin-top: 0%;
+        margin-bottom: -4.5%; } }
   #howItWorks article .cards {
     display: grid;
     grid-template-columns: repeat(3, auto);
@@ -724,6 +789,11 @@ hr {
           width: 345px;
           height: 235px;
           padding: 30px 40px 10px 40px; } }
+      @media only screen and (max-width: 680px) {
+        #howItWorks article .cards .instructionCard {
+          width: 310.5px;
+          height: 211.5px;
+          padding: 27px 36px 9px 36px; } }
     #howItWorks article .cards .email {
       border-top: 12px solid #00ddb1; }
       @media only screen and (max-width: 1090px) {
@@ -732,6 +802,9 @@ hr {
       @media only screen and (max-width: 990px) {
         #howItWorks article .cards .email {
           border-top: 12px solid #00ddb1; } }
+      @media only screen and (max-width: 680px) {
+        #howItWorks article .cards .email {
+          border-top: 10.8px solid #00ddb1; } }
     #howItWorks article .cards .megaphone {
       border-top: 12px solid #2cde00; }
       @media only screen and (max-width: 1090px) {
@@ -740,6 +813,9 @@ hr {
       @media only screen and (max-width: 990px) {
         #howItWorks article .cards .megaphone {
           border-top: 12px solid #2cde00; } }
+      @media only screen and (max-width: 680px) {
+        #howItWorks article .cards .megaphone {
+          border-top: 10.8px solid #2cde00; } }
     #howItWorks article .cards .chat {
       border-top: 12px solid #00c5d6; }
       @media only screen and (max-width: 1090px) {
@@ -748,6 +824,9 @@ hr {
       @media only screen and (max-width: 990px) {
         #howItWorks article .cards .chat {
           border-top: 12px solid #00c5d6; } }
+      @media only screen and (max-width: 680px) {
+        #howItWorks article .cards .chat {
+          border-top: 10.8px solid #00c5d6; } }
 
 #challenge {
   background: url("../img/challengeBackground.jpg.png") no-repeat;

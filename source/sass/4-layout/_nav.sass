@@ -34,7 +34,15 @@
 
     li.nav-toggle
       display: none
+      @media only screen and (max-width: 730px)
+        display: block
+    @media only screen and (max-width: 730px)
+      li.responsive-nav
+        //display: none
 
+      li.responsive-nav.unfold
+        display: block
+        width: 100%
 
 
     li:first-child
