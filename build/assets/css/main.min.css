@@ -364,26 +364,34 @@ hr {
   .main-nav a:hover {
     color: rgba(255, 255, 255, 0.8); }
 
+/*#colorNav
+  background-color: white
+  box-shadow: 0 12px 10px -10px rgba(0,0,0,0.2)
+  height: 100%
+
+  .main-nav
+    li
+      list-style: none
+
+      img
+        width: 25px
+        height: auto
+
+    li.nav-toggle
+      display: none
+      @media only screen and (max-width: 730px)
+        display: block
+    @media only screen and (max-width: 730px)
+      li.responsive-nav */
 #colorNav {
   background-color: white;
   box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2);
   height: 100%; }
   #colorNav .main-nav li {
-    list-style: none; }
-    #colorNav .main-nav li img {
-      width: 25px;
-      height: auto; }
-  #colorNav .main-nav li.nav-toggle {
-    display: none; }
-    @media only screen and (max-width: 730px) {
-      #colorNav .main-nav li.nav-toggle {
-        display: block; } }
-  @media only screen and (max-width: 730px) {
-    #colorNav .main-nav li.responsive-nav.unfold {
-      display: block;
-      width: 100%; } }
-  #colorNav .main-nav li:first-child {
-    margin-right: auto; }
+    list-style: none;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: -10px; }
   #colorNav .main-nav a {
     color: #2683D5; }
   #colorNav .main-nav a.signUpButton {
@@ -484,6 +492,8 @@ hr {
       #header article {
         margin-right: auto;
         margin-left: auto; } }
+    #header article .bmc-button {
+      float: right; }
     #header article .headerText {
       display: flex;
       width: 100%; }
@@ -725,7 +735,7 @@ hr {
     margin-top: -10%
     z-index: -1 */ }
   #howItWorks article h2 {
-    margin-top: 10%;
+    margin-top: 7%;
     margin-bottom: 4%;
     font-weight: bold;
     text-align: center; }
@@ -942,7 +952,26 @@ hr {
         width: 320px;
         font-size: 25px; } }
 
+#support {
+  background: #fbfbfb; }
+  #support h2 {
+    margin-top: 7%;
+    margin-bottom: 4%;
+    font-weight: bold;
+    text-align: center; }
+  #support p {
+    text-align: center;
+    font-size: 20px; }
+  #support .bmc-button {
+    margin-bottom: 10%; }
+
 #terms {
   background-color: white; }
   #terms h4 {
     color: #2683D5; }
+  #terms a {
+    color: #2683D5; }
+    #terms a:hover {
+      color: #004f9a; }
+  #terms #CookieDeclaration {
+    margin-bottom: 5%; }
