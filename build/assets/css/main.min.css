@@ -475,6 +475,7 @@ hr {
   #header article {
     width: 80%;
     margin: 6.5% auto;
+    overflow: hidden;
     /*p.freeText
       color: white
       display: inline-block
@@ -524,7 +525,7 @@ hr {
             margin-top: 0%; } }
         @media only screen and (max-width: 565px) {
           #header article .headerText p {
-            width: 300px; } }
+            width: 100%; } }
       #header article .headerText h1 {
         color: white;
         font-size: 80px;
@@ -568,6 +569,9 @@ hr {
           #header article form input {
             width: 80%;
             justify-content: center; } }
+        @media only screen and (max-width: 600px) {
+          #header article form input {
+            width: 70%; } }
       #header article form ::placeholder {
         color: white;
         opacity: 0.8;
@@ -686,7 +690,7 @@ hr {
           margin-top: -100px; } }
       @media only screen and (max-width: 440px) {
         #backstory .backstoryDiv p.backStoryText {
-          width: 346px;
+          width: 100%;
           padding: 38px 38px;
           margin-top: -40px; } }
     #backstory .backstoryDiv p.seekDiscomfortInfo {
@@ -712,7 +716,7 @@ hr {
           width: 399px; } }
       @media only screen and (max-width: 440px) {
         #backstory .backstoryDiv p.seekDiscomfortInfo {
-          width: 346px;
+          width: 100%;
           padding: 38px 38px;
           margin-top: -20px; } }
 
@@ -855,7 +859,8 @@ hr {
       font-size: 24px; }
 
 #joinNow {
-  margin: 4%; }
+  margin: 6.5%;
+  overflow: hidden; }
   #joinNow h2 {
     margin-bottom: -2%;
     width: 70%;
@@ -892,6 +897,9 @@ hr {
         #joinNow form input {
           width: 80%;
           justify-content: center; } }
+      @media only screen and (max-width: 600px) {
+        #joinNow form input {
+          width: 70%; } }
     #joinNow form ::placeholder {
       color: #505c62;
       opacity: 0.8;
